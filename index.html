@@ -1,22 +1,22 @@
 <!-- include A-Frame obviously -->
-<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
 <!-- include ar.js for A-Frame -->
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
-    <a-entity scale="1 1 1" position="2 0 0">
-      <a-entity gltf-model="Assets/model/tetrapode.gltf" scale=".06 .06 .06">
-        <a-animation attribute="rotation" to="360 360 360" dur="9000" repeat="indefinite" easing="linear"></a-animation>
+    <a-entity>
+      <a-entity gltf-model="Assets/model/tetrapode.gltf" scale=".03 .03 .03" position=".5 0 1" >
+        <a-animation attribute="rotation" to="-360 360 0" dur="2000" repeat="indefinite" easing="linear"></a-animation>
     </a-entity>
-    <a-entity scale="1 1 1" position="0 2 0">
-      <a-entity gltf-model="Assets/model/tetrapode.gltf" scale=".05 .05 .05">
-        <a-animation attribute="rotation" to="360 360 360" dur="6000" repeat="indefinite" easing="linear"></a-animation>
+    <a-entity>
+      <a-entity gltf-model="Assets/model/tetrapode.gltf" scale=".03 .03 .03" position="-1 0 -.5" >
+        <a-animation attribute="rotation" to="360 0 360" dur="2000" repeat="indefinite" easing="linear"></a-animation>
     </a-entity>
-    <a-entity scale="1 1 1" position="0 0 2">
-      <a-entity gltf-model="Assets/model/tetrapode.gltf" scale=".03 .03 .03">
-        <a-animation attribute="rotation" to="360 360 360" dur="3000" repeat="indefinite" easing="linear"></a-animation>
+    <a-entity>
+      <a-entity gltf-model="Assets/model/tetrapode.gltf" scale=".03 .03 .03" position="1 0 -1" >
+        <a-animation attribute="rotation" to="0 360 360" dur="2000" repeat="indefinite" easing="linear"></a-animation>
     </a-entity>
-
+    
     <a-marker-camera smooth='true' type='pattern' url='Assets/marker/pattern-241119_Marker_Nocino.patt'></a-marker-camera>
   </a-scene>
 </body>
